@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/deal_thumb"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:src="@drawable/food1"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/deal_thumb">
+
+        <TextView
+            android:id="@+id/deal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deal Name"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/deal_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karachi, Pakistan"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Rs.1000"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
